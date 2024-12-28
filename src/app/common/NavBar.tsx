@@ -1,16 +1,24 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 function NavBar() {
   return (
     <nav
-      className="navbar navbar-expand-lg"
-      style={{ backgroundColor: "#F5F7FA", height: "100px" }}
+      className="navbar navbar-expand-lg py-4"
+      style={{ backgroundColor: "#F5F7FA" }}
     >
       <div className=" px-5 container-fluid">
-        <a className="navbar-brand" href="/">
-          <Image src="Logo.svg" alt="Logo" width={150} height={100} />
-        </a>
+        <Link className="navbar-brand" href="/">
+          <Image
+            src="Logo.svg"
+            alt="Logo"
+            height={100}
+            width={0}
+            style={{ width: "auto" }}
+            layout="intrinsic"
+          />
+        </Link>
         <button
           className="navbar-toggler"
           type="button"
@@ -28,34 +36,38 @@ function NavBar() {
         >
           <ul className="navbar-nav mx-auto mb-2 mb-lg-0 justify-content-between">
             <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="/">
+              <Link className="nav-link active" aria-current="page" href="/">
                 Home
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="/about">
+              <Link
+                className="nav-link active"
+                aria-current="page"
+                href="/about"
+              >
                 Service
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="#">
+              <Link className="nav-link active" aria-current="page" href="#">
                 Feature
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <Link className="nav-link" href="#">
                 Product
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <Link className="nav-link" href="#">
                 Testimonial
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <Link className="nav-link" href="#">
                 FAQ
-              </a>
+              </Link>
             </li>
           </ul>
           <div className="d-flex justify-content-between">

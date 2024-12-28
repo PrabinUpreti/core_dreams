@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 export default function Carousel() {
@@ -16,7 +17,14 @@ export default function Carousel() {
             </p>
             <button className="btn btn-success">Register</button>
           </div>
-          <img className="col-md-5" src="Illustration.svg" alt="" />
+          <Image
+            className="col-md-5"
+            src="Illustration.svg"
+            alt=""
+            width={0}
+            height={0}
+            style={{ height: "100%" }}
+          />
         </div>
       </div>
     </section>

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 export default function DesignFooter() {
@@ -5,7 +6,14 @@ export default function DesignFooter() {
     <div className=" my-5 container">
       <div className=" pt-5 row align-items-center">
         <div className="col-md-4">
-          <img src="pana.svg" style={{ width: "100%" }} alt="" />
+          <Image
+            src="/pana.svg"
+            width={0}
+            height={0}
+            style={{ width: "100%" }}
+            alt=""
+            layout="intrinsic"
+          />
         </div>
         <div className="col-md-8">
           <h1>How to design your site footer like we did</h1>

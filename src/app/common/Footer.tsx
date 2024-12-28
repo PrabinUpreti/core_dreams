@@ -1,3 +1,5 @@
+import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 export default function Footer() {
@@ -19,28 +21,31 @@ export default function Footer() {
             <div className="row">
               <div className="col-md-5 mb-5">
                 <div className="d-flex align-items-center">
-                  <img
-                    src="IconFooter.png"
+                  <Image
+                    src="IconFooter.svg"
                     alt="Nexcent"
+                    height={0}
+                    width={0}
                     style={{ width: "40px", marginRight: "10px" }}
+                    layout="intrinsic"
                   />
-                  <h5 className="mb-0">Nexcent</h5>
+                  <h3 className="mb-0">Nexcent</h3>
                 </div>
                 <p className="mt-2 mb-0">Copyright © 2020 Nexcent Ltd.</p>
                 <small>All rights reserved</small>
                 <div className=" mt-5 d-flex gap-2">
-                  <a href="#" className="text-light">
+                  <Link href="#" className="text-light">
                     <i className="bi bi-instagram"></i>
-                  </a>
-                  <a href="#" className="text-light">
+                  </Link>
+                  <Link href="#" className="text-light">
                     <i className="bi bi-twitter"></i>
-                  </a>
-                  <a href="#" className="text-light">
+                  </Link>
+                  <Link href="#" className="text-light">
                     <i className="bi bi-facebook"></i>
-                  </a>
-                  <a href="#" className="text-light">
+                  </Link>
+                  <Link href="#" className="text-light">
                     <i className="bi bi-youtube"></i>
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div className="row col-md-7 mb-7">
@@ -48,29 +53,44 @@ export default function Footer() {
                   <h4>Company</h4>
                   <ul className="list-unstyled">
                     <li>
-                      <a href="#" className="text-light text-decoration-none">
+                      <Link
+                        href="#"
+                        className="text-light text-decoration-none"
+                      >
                         About us
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="#" className="text-light text-decoration-none">
+                      <Link
+                        href="#"
+                        className="text-light text-decoration-none"
+                      >
                         Blog
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="#" className="text-light text-decoration-none">
+                      <Link
+                        href="#"
+                        className="text-light text-decoration-none"
+                      >
                         Contact us
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="#" className="text-light text-decoration-none">
+                      <Link
+                        href="#"
+                        className="text-light text-decoration-none"
+                      >
                         Pricing
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="#" className="text-light text-decoration-none">
+                      <Link
+                        href="#"
+                        className="text-light text-decoration-none"
+                      >
                         Testimonials
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
@@ -78,29 +98,44 @@ export default function Footer() {
                   <h4>Support</h4>
                   <ul className="list-unstyled">
                     <li>
-                      <a href="#" className="text-light text-decoration-none">
+                      <Link
+                        href="#"
+                        className="text-light text-decoration-none"
+                      >
                         Help center
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="#" className="text-light text-decoration-none">
+                      <Link
+                        href="#"
+                        className="text-light text-decoration-none"
+                      >
                         Terms of service
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="#" className="text-light text-decoration-none">
+                      <Link
+                        href="#"
+                        className="text-light text-decoration-none"
+                      >
                         Legal
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="#" className="text-light text-decoration-none">
+                      <Link
+                        href="#"
+                        className="text-light text-decoration-none"
+                      >
                         Privacy policy
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="#" className="text-light text-decoration-none">
+                      <Link
+                        href="#"
+                        className="text-light text-decoration-none"
+                      >
                         Status
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>

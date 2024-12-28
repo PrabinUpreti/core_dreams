@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 export default function Pixelgrade() {
@@ -5,7 +6,14 @@ export default function Pixelgrade() {
     <div className=" my-5 container">
       <div className=" pt-5 row align-items-center">
         <div className="col-md-4">
-          <img src="rafiki.svg" style={{ width: "100%" }} alt="" />
+          <Image
+            src="rafiki.svg"
+            width={0}
+            height={0}
+            style={{ width: "100%" }}
+            alt=""
+            layout="intrinsic"
+          />
         </div>
         <div className="col-md-8">
           <h1>The unseen of spending three years at Pixelgrade</h1>

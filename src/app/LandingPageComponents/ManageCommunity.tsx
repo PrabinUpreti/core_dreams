@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 export default function ManageCommunity() {
@@ -12,10 +13,11 @@ export default function ManageCommunity() {
       <div className="d-flex justify-content-center justify-content-md-around flex-wrap">
         <div className="my-1 p-3 card text-center" style={{ width: "18rem" }}>
           <div className="card-body">
-            <img
+            <Image
               className="mb-4"
-              src="Icon-4.svg"
-              style={{ height: "80px" }}
+              src="/Icon-4.svg"
+              width={80}
+              height={80}
               alt=""
             />
             <h3 className="card-title">Membership Organisations</h3>
@@ -28,11 +30,12 @@ export default function ManageCommunity() {
         </div>
         <div className="my-1 p-3 card text-center" style={{ width: "18rem" }}>
           <div className="card-body">
-            <img
-              className="mb-4"
-              src="Icon-5.svg"
-              style={{ height: "80px" }}
+            <Image
               alt=""
+              className="mb-4"
+              src="/Icon-5.svg"
+              width={80}
+              height={80}
             />
             <h3 className="card-title">National Associations</h3>
 
@@ -44,10 +47,11 @@ export default function ManageCommunity() {
         </div>
         <div className=" my-1 p-3 card text-center" style={{ width: "18rem" }}>
           <div className="card-body">
-            <img
+            <Image
               className="mb-4"
-              src="Icon-6.svg"
-              style={{ height: "80px" }}
+              src="/Icon-6.svg"
+              width={80}
+              height={80}
               alt=""
             />
             <h3 className="card-title">Clubs And Groups</h3>

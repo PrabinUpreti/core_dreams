@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 export default function OurClients() {
@@ -11,9 +12,11 @@ export default function OurClients() {
         {Array(7)
           .fill(null)
           .map((_, index) => (
-            <img
+            <Image
               key={index}
-              style={{ height: "50px" }}
+              height={50}
+              width={0}
+              style={{ width: "100%" }}
               src={`Logo-${index + 1}.svg`}
               alt=""
             />

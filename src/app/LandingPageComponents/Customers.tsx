@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 export default function Customers() {
@@ -6,7 +7,16 @@ export default function Customers() {
       <div className=" my-5 container">
         <div className="py-5 row align-items-center">
           <div className="col-md-3">
-            <img src="image9.png" style={{ width: "100%" }} alt="" />
+            <Image
+              src="/image9.png"
+              width={600}
+              height={0}
+              alt=""
+              style={{ maxWidth: "100%" }}
+              layout="intrinsic"
+              quality={100}
+              priority={true}
+            />
           </div>
           <div className="col-md-9">
             <p>
@@ -28,11 +38,12 @@ export default function Customers() {
               {Array(5)
                 .fill(null)
                 .map((_, index) => (
-                  <img
+                  <Image
                     key={index}
-                    style={{ height: "50px" }}
                     src={`Logo-${index + 1}.svg`}
                     alt=""
+                    height={50}
+                    width={50}
                   />
                 ))}
               <div className="btn btn-link">Meet All Customers</div>
