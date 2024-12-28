@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 function NavBar() {
@@ -8,7 +9,7 @@ function NavBar() {
     >
       <div className=" px-5 container-fluid">
         <a className="navbar-brand" href="/">
-          <img src="Logo.svg" alt="Logo" style={{ width: "150px" }} />
+          <Image src="Logo.svg" alt="Logo" width={150} height={100} />
         </a>
         <button
           className="navbar-toggler"
