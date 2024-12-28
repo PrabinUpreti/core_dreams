@@ -2,7 +2,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import type { Metadata } from "next";
 
-// import BootstrapClient from "@/components/BootstrapClient";
+import BootstrapClient from "@/components/BootstrapClient";
 import NavBar from "./common/NavBar";
 
 export const metadata: Metadata = {
@@ -20,7 +20,7 @@ export default function RootLayout({
       <body>
         <NavBar />
         {children}
-        {/* <BootstrapClient /> */}
+        <BootstrapClient />
       </body>
     </html>
   );
